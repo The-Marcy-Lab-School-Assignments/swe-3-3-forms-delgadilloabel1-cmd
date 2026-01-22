@@ -22,51 +22,107 @@ ul {
 
 /* TODO: Add your styles here */
 
-/* Header */
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px; /* 20px padding all around */
+}
 
+/* Header */
 header {
   text-align: center;
-  padding: 20px;
+  margin-bottom: 30px;
 }
 
-/* Form */
-h2 {
-  padding-bottom: 10px;
+.header-info {
+  margin-top: 8px;
+  font-size: 0.95rem;
 }
-/* Typed Info */
 
+/* Form container */
 form {
-  margin: 0, auto;
-  background-color: white;
-  padding: 30px;
+  background: #ffffff;
+  max-width: 700px;
+  margin: 0 auto; /* center */
+  padding: 30px; /* 30px padding around form */
+  border-radius: 4px;
 }
 
+/* h2 spacing */
+form h2 {
+  margin-bottom: 10px; /* 10px bottom padding */
+}
+
+/* Typed info grid */
 .typed-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  background-color: pink;
-}
-
-.input {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px; /* 20px gap between form fields in a row */
   margin-bottom: 20px;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1 fr 1fr;
-  gap: 20px;
 }
 
-/* Selections */
-.lunch {
-  padding: 15px;
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px; /* 5px between label and input */
+  font-size: 0.9rem;
 }
-.Select {
-  padding: 15px;
+
+/* Inputs */
+.input,
+textarea {
+  width: 100%;
+  padding: 10px; /* 10px padding */
+  border: 1px solid #999;
+  border-radius: 3px;
+  font-size: 0.95rem;
 }
-main {
+
+/* Fieldsets */
+.fieldset,
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px; /* 15px padding */
+  margin-bottom: 20px; /* 20px gap between form elements */
+}
+
+legend {
+  padding: 0 5px;
+  font-size: 0.9rem;
+}
+
+/* Radio & checkbox options */
+.option,
+fieldset div {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  gap: 8px; /* 8px between input and label */
+  margin-bottom: 10px; /* 10px gap between options */
 }
 
-body {
-  background-color: var(--color-background);
+/* Special requests */
+.special-requests {
+  margin-bottom: 5px;
+}
+
+textarea {
+  min-height: 100px; /* Min height 100px */
+  margin-bottom: 20px;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px; /* 12px padding */
+  background: #0d6efd;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b5ed7;
 }
