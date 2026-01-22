@@ -21,3 +21,52 @@ ul {
 }
 
 /* TODO: Add your styles here */
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Form */
+h2 {
+  padding-bottom: 10px;
+}
+/* Typed Info */
+
+form {
+  margin: 0, auto;
+  background-color: white;
+  padding: 30px;
+}
+
+.typed-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: pink;
+}
+
+.input {
+  margin-bottom: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1 fr 1fr;
+  gap: 20px;
+}
+
+/* Selections */
+.lunch {
+  padding: 15px;
+}
+.Select {
+  padding: 15px;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--color-background);
+}
