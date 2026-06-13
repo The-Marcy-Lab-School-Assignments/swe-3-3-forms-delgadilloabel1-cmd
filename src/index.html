@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>NYC Tech Summit 2026</h1>
+      <p class="header-info">
+        March 15, 2026 | 9:00 AM - 5:OO PM | Manhattan Conference Center
+      </p>
+    </header>
+    <!-- Main -->
+    <main>
+      <form action="https://formspree.io/f/mvzzdjdo" method="POST">
+        <h2>Event RSVP</h2>
+
+        <!-- Typed Info -->
+        <div class="typed-info">
+          <div>
+            <label class="label" for="first-name">First Name</label>
+            <input class="input" type="text" id="first-name" name="firstName" />
+          </div>
+
+          <div>
+            <label class="label" for="last-name">Last Name</label>
+            <input class="input" type="text" id="last-name" name="lastName" />
+          </div>
+
+          <div>
+            <label class="label" for="emial">Email</label>
+            <input class="input" type="email" id="email" name="email" />
+          </div>
+
+          <div>
+            <label class="label" for="number-of-tickets"
+              >Number of Tickets</label
+            >
+            <input
+              class="input"
+              type="number"
+              id="number-of-tickets"
+              name="numberOfTickets"
+            />
+          </div>
+        </div>
+
+        <!-- Selections -->
+
+        <!-- Lunch Preference -->
+        <fieldset class="fieldset">
+          <legend>Lunch Preference</legend>
+
+          <div class="option">
+            <input type="radio" id="chicken" name="lunch" value="chicken" />
+            <label for="chicken">Chicken</label>
+          </div>
+
+          <div class="option">
+            <input type="radio" id="fish" name="lunch" value="fish" />
+            <label for="fish">Fish</label>
+          </div>
+
+          <div class="option">
+            <input
+              type="radio"
+              id="vegetarian"
+              name="lunch"
+              value="vegetarian"
+            />
+            <label for="vegetarian">Vegetarian</label>
+          </div>
+        </fieldset>
+
+        <!-- Workshop Sections -->
+        <fieldset>
+          <legend>Select Workshop Sessions (Check all that apply)</legend>
+
+          <div>
+            <input
+              class="Select"
+              type="checkbox"
+              name="section-1"
+              id="section-1"
+            />
+            <label for="section-1">Section 1</label>
+          </div>
+
+          <div>
+            <input
+              class="Select"
+              type="checkbox"
+              name="section-2"
+              id="section-2"
+            />
+            <label for="section-2">Section 2</label>
+          </div>
+
+          <div>
+            <input
+              class="Select"
+              type="checkbox"
+              name="section-3"
+              id="section-3"
+            />
+            <label for="section-3">Section 3</label>
+          </div>
+
+          <div>
+            <input
+              class="Select"
+              type="checkbox"
+              name="section-4"
+              id="section-4"
+            />
+            <label for="section-4">Section 4</label>
+          </div>
+
+          <div>
+            <input
+              class="Select"
+              type="checkbox"
+              name="section-5"
+              id="section-5"
+            />
+            <label for="section-5">Section 5</label>
+          </div>
+        </fieldset>
+        <!-- Special Requests -->
+
+        <div>
+          <label for="special-reuqests" class="special-requests"
+            >Special Requests or Notes</label
+          >
+          <textarea
+            name="special-requests"
+            id="special-requests"
+            rows="5"
+            cols="40"
+            placeholder="Dietary restrictions, accessibility needs, questions, etc."
+          ></textarea>
+        </div>
+
+        <!-- Sumbit -->
+        <button type="submit">Complete RSVP</button>
+      </form>
+    </main>
+
+    <!-- Footer -->
+
+    <footer></footer>
+  </body>
+</html>
